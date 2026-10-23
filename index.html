@@ -1,24 +1,1331 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
 <head>
-    <title>Ali Akhlaghi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ali Akhlaghi | Data Scientist & ML Engineer</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Ali Akhlaghi — Data Scientist, Machine Learning Engineer and Data Analyst based in Amsterdam."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<h1>Ali Akhlaghi</h1>
+  <!-- Background effects -->
+  <div class="background-grid"></div>
+  <div class="blob blob-one"></div>
+  <div class="blob blob-two"></div>
 
-<h2>Data Scientist | Machine Learning Engineer | Data Analyst</h2>
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar container">
 
-<p>Welcome to my portfolio.</p>
+      <a href="#home" class="logo">
+        AA<span>.</span>
+      </a>
 
-<h2>Projects</h2>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-<h3>E-Commerce Performance Analysis</h3>
-<p>PostgreSQL, SQL, Python, GitHub Actions</p>
+      <div class="nav-actions">
 
-<h3>Scalable Machine Learning Pipeline</h3>
-<p>Python, Snakemake, Dask, CI/CD</p>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle theme"
+        >
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+      </div>
+
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero section" id="home">
+
+      <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Open to Data, ML & AI opportunities
+          </div>
+
+          <p class="eyebrow">HELLO, I'M</p>
+
+          <h1>
+            Ali <span class="gradient-text">Akhlaghi</span>
+          </h1>
+
+          <h2>
+            Data Scientist
+            <span>•</span>
+            Machine Learning Engineer
+            <span>•</span>
+            Data Analyst
+          </h2>
+
+          <p class="hero-description">
+            I build data-driven solutions across machine learning,
+            analytics, AI and life sciences — from raw data and scalable
+            pipelines to predictive models and actionable insights.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#projects" class="btn btn-primary">
+              Explore My Work
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+
+            <a
+              href="https://github.com/aliakhlaghiii"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              <i class="fa-brands fa-github"></i>
+              GitHub
+            </a>
+
+          </div>
+
+          <div class="hero-socials">
+
+            <a
+              href="https://github.com/aliakhlaghiii"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/akhlaghiali"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a
+              href="mailto:akhlaghiali97@gmail.com"
+              aria-label="Email"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-visual reveal">
+
+          <div class="terminal">
+
+            <div class="terminal-header">
+
+              <div class="terminal-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <span>ali@portfolio:~</span>
+
+            </div>
+
+            <div class="terminal-body">
+
+              <p>
+                <span class="terminal-green">$</span>
+                whoami
+              </p>
+
+              <p class="terminal-output">
+                Ali Akhlaghi
+              </p>
+
+              <p>
+                <span class="terminal-green">$</span>
+                cat profile.json
+              </p>
+
+              <div class="terminal-json">
+                {<br>
+                &nbsp;&nbsp;<span>"role"</span>:
+                "Data Scientist / ML Engineer",<br>
+
+                &nbsp;&nbsp;<span>"location"</span>:
+                "Amsterdam, NL",<br>
+
+                &nbsp;&nbsp;<span>"education"</span>:
+                "M.Sc. Data Science for Life Sciences",<br>
+
+                &nbsp;&nbsp;<span>"focus"</span>:
+                ["ML", "AI", "Analytics", "MLOps"],<br>
+
+                &nbsp;&nbsp;<span>"languages"</span>:
+                ["Python", "SQL"]<br>
+                }
+              </div>
+
+              <p class="terminal-last">
+                <span class="terminal-green">$</span>
+                <span id="typedText"></span><span class="cursor">|</span>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-indicator">
+        <span>Scroll</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <p class="section-label">01 — ABOUT</p>
+          <h2>Turning data into <span>decisions.</span></h2>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-text reveal">
+
+            <p>
+              I'm a Data Scientist and Machine Learning Engineer based
+              in Amsterdam with an M.Sc. in Data Science for Life Sciences.
+            </p>
+
+            <p>
+              My work spans machine learning, statistical analysis,
+              generative AI, healthcare analytics, data engineering and
+              scalable ML workflows.
+            </p>
+
+            <p>
+              I enjoy working across the full data lifecycle: understanding
+              the problem, preparing reliable data, developing models,
+              evaluating results and turning technical work into useful
+              business insights.
+            </p>
+
+          </div>
+
+
+          <div class="about-cards reveal">
+
+            <div class="mini-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span>Based in</span>
+                <strong>Amsterdam, Netherlands</strong>
+              </div>
+            </div>
+
+            <div class="mini-card">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <span>Education</span>
+                <strong>M.Sc. Data Science</strong>
+              </div>
+            </div>
+
+            <div class="mini-card">
+              <i class="fa-solid fa-code"></i>
+              <div>
+                <span>Core stack</span>
+                <strong>Python • SQL • ML</strong>
+              </div>
+            </div>
+
+            <div class="mini-card">
+              <i class="fa-solid fa-briefcase"></i>
+              <div>
+                <span>Interested in</span>
+                <strong>Data • ML • AI</strong>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="section alternate-section" id="skills">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <p class="section-label">02 — TOOLBOX</p>
+          <h2>Technologies I <span>work with.</span></h2>
+        </div>
+
+
+        <div class="skills-grid">
+
+          <div class="skill-category reveal">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+
+            <h3>Programming & Data</h3>
+
+            <div class="skill-tags">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>PostgreSQL</span>
+              <span>PySpark</span>
+              <span>Pandas</span>
+              <span>NumPy</span>
+            </div>
+
+          </div>
+
+
+          <div class="skill-category reveal">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+
+            <h3>Machine Learning</h3>
+
+            <div class="skill-tags">
+              <span>Scikit-learn</span>
+              <span>Classification</span>
+              <span>Random Forest</span>
+              <span>SVM</span>
+              <span>Anomaly Detection</span>
+              <span>Model Evaluation</span>
+              <span>PCA</span>
+            </div>
+
+          </div>
+
+
+          <div class="skill-category reveal">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+
+            <h3>Generative AI</h3>
+
+            <div class="skill-tags">
+              <span>LLMs</span>
+              <span>VLMs</span>
+              <span>Hugging Face</span>
+              <span>LoRA</span>
+              <span>PEFT</span>
+              <span>Prompt Engineering</span>
+              <span>RAG</span>
+            </div>
+
+          </div>
+
+
+          <div class="skill-category reveal">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+
+            <h3>Data Engineering & MLOps</h3>
+
+            <div class="skill-tags">
+              <span>Databricks</span>
+              <span>Azure</span>
+              <span>Delta Lake</span>
+              <span>Snakemake</span>
+              <span>Dask</span>
+              <span>GitHub Actions</span>
+              <span>CI/CD</span>
+            </div>
+
+          </div>
+
+
+          <div class="skill-category reveal">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-chart-column"></i>
+            </div>
+
+            <h3>Analytics & Visualization</h3>
+
+            <div class="skill-tags">
+              <span>Power BI</span>
+              <span>Plotly</span>
+              <span>Dash</span>
+              <span>Data Visualization</span>
+              <span>Statistical Analysis</span>
+              <span>Predictive Analytics</span>
+            </div>
+
+          </div>
+
+
+          <div class="skill-category reveal">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+
+            <h3>Life Sciences</h3>
+
+            <div class="skill-tags">
+              <span>Healthcare Analytics</span>
+              <span>Medical Imaging</span>
+              <span>Image Analysis</span>
+              <span>Bioinformatics</span>
+              <span>Survival Analysis</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <p class="section-label">03 — PROJECTS</p>
+          <h2>Selected <span>work.</span></h2>
+
+          <p class="section-description">
+            Projects spanning analytics, machine learning,
+            generative AI, healthcare and scalable data workflows.
+          </p>
+        </div>
+
+
+        <!-- Filters -->
+        <div class="project-filters reveal">
+
+          <button class="filter-btn active" data-filter="all">
+            All
+          </button>
+
+          <button class="filter-btn" data-filter="analytics">
+            Analytics
+          </button>
+
+          <button class="filter-btn" data-filter="ml">
+            Machine Learning
+          </button>
+
+          <button class="filter-btn" data-filter="ai">
+            AI / LLM
+          </button>
+
+          <button class="filter-btn" data-filter="healthcare">
+            Healthcare
+          </button>
+
+          <button class="filter-btn" data-filter="mlops">
+            MLOps
+          </button>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+          <!-- E-commerce -->
+          <article
+            class="project-card featured-project reveal"
+            data-category="analytics"
+          >
+
+            <div class="project-top">
+
+              <span class="featured-label">
+                Featured
+              </span>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/aliakhlaghiii/e-commerce-performance-analysis-SQL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open GitHub repository"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="project-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <p class="project-type">
+              DATA ANALYTICS
+            </p>
+
+            <h3>
+              E-Commerce Performance Analysis
+            </h3>
+
+            <p>
+              PostgreSQL analytics workflow for 99,441 e-commerce orders,
+              combining structured SQL analysis, Python data loading and
+              automated quality checks.
+            </p>
+
+            <div class="project-results">
+
+              <div>
+                <strong>99,441</strong>
+                <span>Orders</span>
+              </div>
+
+              <div>
+                <strong>5.51%</strong>
+                <span>Repeat-customer sales</span>
+              </div>
+
+              <div>
+                <strong>6.77%</strong>
+                <span>Late deliveries</span>
+              </div>
+
+            </div>
+
+            <div class="project-tech">
+              <span>PostgreSQL</span>
+              <span>SQL</span>
+              <span>Python</span>
+              <span>GitHub Actions</span>
+            </div>
+
+            <a
+              class="project-cta"
+              href="https://github.com/aliakhlaghiii/e-commerce-performance-analysis-SQL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+
+          <!-- Colon Polyp -->
+          <article
+            class="project-card featured-project reveal"
+            data-category="ai healthcare"
+          >
+
+            <div class="project-top">
+
+              <span class="featured-label">
+                Featured
+              </span>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/aliakhlaghiii/colon_polyp_captioning-LLM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="project-icon">
+              <i class="fa-solid fa-microscope"></i>
+            </div>
+
+            <p class="project-type">
+              GENERATIVE AI • HEALTHCARE
+            </p>
+
+            <h3>
+              Colon Polyp Captioning
+            </h3>
+
+            <p>
+              Medical vision-language project exploring automated
+              caption generation for colonoscopy imagery using modern
+              multimodal and parameter-efficient fine-tuning techniques.
+            </p>
+
+            <div class="project-tech">
+              <span>LLM</span>
+              <span>VLM</span>
+              <span>LoRA</span>
+              <span>PEFT</span>
+              <span>Hugging Face</span>
+              <span>Medical AI</span>
+            </div>
+
+            <a
+              class="project-cta"
+              href="https://github.com/aliakhlaghiii/colon_polyp_captioning-LLM"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+
+          <!-- Scalable ML -->
+          <article
+            class="project-card featured-project reveal"
+            data-category="ml mlops"
+          >
+
+            <div class="project-top">
+
+              <span class="featured-label">
+                Featured
+              </span>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/aliakhlaghiii/scalable_ML_pipeline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="project-icon">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+
+            <p class="project-type">
+              MACHINE LEARNING • MLOPS
+            </p>
+
+            <h3>
+              Scalable ML Pipeline
+            </h3>
+
+            <p>
+              Reproducible machine-learning workflow focused on scalable
+              processing, pipeline orchestration and automated validation
+              through continuous integration.
+            </p>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Snakemake</span>
+              <span>Dask</span>
+              <span>CI/CD</span>
+              <span>GitHub Actions</span>
+            </div>
+
+            <a
+              class="project-cta"
+              href="https://github.com/aliakhlaghiii/scalable_ML_pipeline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+
+          <!-- Pump -->
+          <article
+            class="project-card featured-project reveal"
+            data-category="ml"
+          >
+
+            <div class="project-top">
+
+              <span class="featured-label">
+                Featured
+              </span>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/aliakhlaghiii/pump_sensors_anomaly_detection"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="project-icon">
+              <i class="fa-solid fa-industry"></i>
+            </div>
+
+            <p class="project-type">
+              MACHINE LEARNING
+            </p>
+
+            <h3>
+              Pump Sensor Anomaly Detection
+            </h3>
+
+            <p>
+              Predictive-maintenance project using multivariate sensor data
+              and unsupervised machine-learning techniques to identify
+              abnormal equipment behaviour.
+            </p>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Isolation Forest</span>
+              <span>One-Class SVM</span>
+              <span>LOF</span>
+              <span>PCA</span>
+            </div>
+
+            <a
+              class="project-cta"
+              href="https://github.com/aliakhlaghiii/pump_sensors_anomaly_detection"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+
+          <!-- RAG -->
+          <article
+            class="project-card reveal"
+            data-category="ai"
+          >
+
+            <div class="project-top">
+
+              <span class="project-number">
+                05
+              </span>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/aliakhlaghiii/Enterprise-RAG-Assistant"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="project-icon">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+
+            <p class="project-type">
+              GENERATIVE AI
+            </p>
+
+            <h3>
+              Enterprise RAG Assistant
+            </h3>
+
+            <p>
+              Retrieval-augmented generation project exploring how
+              enterprise knowledge can be connected to LLM-based
+              question-answering workflows.
+            </p>
+
+            <div class="project-tech">
+              <span>RAG</span>
+              <span>LLM</span>
+              <span>Generative AI</span>
+            </div>
+
+            <a
+              class="project-cta"
+              href="https://github.com/aliakhlaghiii/Enterprise-RAG-Assistant"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+
+          <!-- Time Series -->
+          <article
+            class="project-card reveal"
+            data-category="analytics ml"
+          >
+
+            <div class="project-top">
+
+              <span class="project-number">
+                06
+              </span>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/aliakhlaghiii/Time-series"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="project-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <p class="project-type">
+              TIME SERIES
+            </p>
+
+            <h3>
+              Time-Series Analysis
+            </h3>
+
+            <p>
+              Data-science project exploring temporal data,
+              time-dependent patterns and analytical methods for
+              understanding sequential observations.
+            </p>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Time Series</span>
+              <span>Data Analysis</span>
+              <span>Visualization</span>
+            </div>
+
+            <a
+              class="project-cta"
+              href="https://github.com/aliakhlaghiii/Time-series"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+
+          <!-- Diabetes -->
+          <article
+            class="project-card reveal"
+            data-category="ml healthcare"
+          >
+
+            <div class="project-top">
+
+              <span class="project-number">
+                07
+              </span>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/aliakhlaghiii/diabetes_stroke"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="project-icon">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+
+            <p class="project-type">
+              HEALTHCARE • MACHINE LEARNING
+            </p>
+
+            <h3>
+              Diabetes & Stroke Analysis
+            </h3>
+
+            <p>
+              Healthcare data-science project applying statistical and
+              machine-learning techniques to investigate clinical
+              risk-related patterns.
+            </p>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Healthcare</span>
+              <span>Machine Learning</span>
+              <span>Statistics</span>
+            </div>
+
+            <a
+              class="project-cta"
+              href="https://github.com/aliakhlaghiii/diabetes_stroke"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+
+          <!-- Liver -->
+          <article
+            class="project-card reveal"
+            data-category="ml healthcare"
+          >
+
+            <div class="project-top">
+
+              <span class="project-number">
+                08
+              </span>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/aliakhlaghiii/Liver_disease"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="project-icon">
+              <i class="fa-solid fa-notes-medical"></i>
+            </div>
+
+            <p class="project-type">
+              HEALTHCARE ANALYTICS
+            </p>
+
+            <h3>
+              Liver Disease Analysis
+            </h3>
+
+            <p>
+              Healthcare analytics project investigating liver-disease
+              data using data preparation, statistical analysis and
+              predictive modelling.
+            </p>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Healthcare</span>
+              <span>Statistics</span>
+              <span>Machine Learning</span>
+            </div>
+
+            <a
+              class="project-cta"
+              href="https://github.com/aliakhlaghiii/Liver_disease"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+
+          <!-- Gene Expression -->
+          <article
+            class="project-card reveal"
+            data-category="healthcare analytics"
+          >
+
+            <div class="project-top">
+
+              <span class="project-number">
+                09
+              </span>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/aliakhlaghiii/Gene_expression"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="project-icon">
+              <i class="fa-solid fa-dna"></i>
+            </div>
+
+            <p class="project-type">
+              BIOINFORMATICS
+            </p>
+
+            <h3>
+              Gene Expression Analysis
+            </h3>
+
+            <p>
+              Bioinformatics project exploring gene-expression data
+              through computational analysis and data-science methods.
+            </p>
+
+            <div class="project-tech">
+              <span>Bioinformatics</span>
+              <span>Data Analysis</span>
+              <span>Life Sciences</span>
+            </div>
+
+            <a
+              class="project-cta"
+              href="https://github.com/aliakhlaghiii/Gene_expression"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+
+          <!-- Integromics -->
+          <article
+            class="project-card reveal"
+            data-category="healthcare analytics"
+          >
+
+            <div class="project-top">
+
+              <span class="project-number">
+                10
+              </span>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/aliakhlaghiii/integromics"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="project-icon">
+              <i class="fa-solid fa-dna"></i>
+            </div>
+
+            <p class="project-type">
+              LIFE SCIENCES
+            </p>
+
+            <h3>
+              Integromics
+            </h3>
+
+            <p>
+              Life-sciences data project focused on computational
+              analysis and integration of biological data.
+            </p>
+
+            <div class="project-tech">
+              <span>Bioinformatics</span>
+              <span>Life Sciences</span>
+              <span>Data Science</span>
+            </div>
+
+            <a
+              class="project-cta"
+              href="https://github.com/aliakhlaghiii/integromics"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+        </div>
+
+
+        <div class="github-more reveal">
+
+          <p>
+            Want to see the code behind the work?
+          </p>
+
+          <a
+            href="https://github.com/aliakhlaghiii"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-secondary"
+          >
+            <i class="fa-brands fa-github"></i>
+            View All Repositories
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section class="section alternate-section" id="education">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <p class="section-label">04 — BACKGROUND</p>
+          <h2>Education & <span>focus.</span></h2>
+        </div>
+
+
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-content">
+
+              <span class="timeline-type">
+                Master's Degree
+              </span>
+
+              <h3>
+                M.Sc. Data Science for Life Sciences
+              </h3>
+
+              <p>
+                Advanced training at the intersection of data science,
+                machine learning, statistics and life-sciences applications.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="timeline-item reveal">
+
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-content">
+
+              <span class="timeline-type">
+                Current Development
+              </span>
+
+              <h3>
+                Cloud Data Engineering & Analytics
+              </h3>
+
+              <p>
+                Expanding end-to-end data engineering capabilities using
+                Azure, Databricks, PySpark, Delta Lake, Unity Catalog,
+                dimensional modelling and Power BI.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+
+      <div class="container contact-container reveal">
+
+        <p class="section-label">
+          05 — CONTACT
+        </p>
+
+        <h2>
+          Let's build something
+          <span>meaningful.</span>
+        </h2>
+
+        <p>
+          I'm interested in opportunities across Data Science,
+          Machine Learning, AI and Data Analytics.
+        </p>
+
+        <div class="contact-buttons">
+
+          <a
+            href="mailto:akhlaghiali97@gmail.com"
+            class="btn btn-primary"
+          >
+            <i class="fa-solid fa-envelope"></i>
+            Get in Touch
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/akhlaghiali"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-secondary"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container footer-content">
+
+      <div>
+        <strong>Ali Akhlaghi</strong>
+        <p>
+          Data Scientist • ML Engineer • Data Analyst
+        </p>
+      </div>
+
+      <div class="footer-links">
+
+        <a
+          href="https://github.com/aliakhlaghiii"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/akhlaghiali"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="mailto:akhlaghiali97@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>
+        © <span id="currentYear"></span> Ali Akhlaghi.
+        Built with HTML, CSS & JavaScript.
+      </p>
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
 
 </body>
 </html>
