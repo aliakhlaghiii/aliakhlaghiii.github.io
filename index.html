@@ -13,6 +13,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
     rel="stylesheet"
@@ -28,12 +29,11 @@
 
 <body>
 
-  <!-- Background effects -->
   <div class="background-grid"></div>
   <div class="blob blob-one"></div>
   <div class="blob blob-two"></div>
 
-  <!-- Navigation -->
+  <!-- NAVIGATION -->
   <header class="header">
     <nav class="navbar container">
 
@@ -56,7 +56,7 @@
           id="themeToggle"
           aria-label="Toggle theme"
         >
-          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
         </button>
 
         <button
@@ -87,7 +87,20 @@
             Open to Data, ML & AI opportunities
           </div>
 
-          <p class="eyebrow">HELLO, I'M</p>
+          <!-- SMALL PROFILE PHOTO -->
+          <div class="intro-row">
+
+            <div class="profile-photo-wrapper">
+              <img
+                src="assets/images/ali-akhlaghi.jpg"
+                alt="Ali Akhlaghi"
+                class="profile-photo"
+              >
+            </div>
+
+            <p class="eyebrow">HELLO, I'M</p>
+
+          </div>
 
           <h1>
             Ali <span class="gradient-text">Akhlaghi</span>
@@ -158,6 +171,7 @@
         </div>
 
 
+        <!-- TERMINAL -->
         <div class="hero-visual reveal">
 
           <div class="terminal">
@@ -211,7 +225,8 @@
 
               <p class="terminal-last">
                 <span class="terminal-green">$</span>
-                <span id="typedText"></span><span class="cursor">|</span>
+                <span id="typedText"></span>
+                <span class="cursor">|</span>
               </p>
 
             </div>
@@ -237,7 +252,11 @@
 
         <div class="section-heading reveal">
           <p class="section-label">01 — ABOUT</p>
-          <h2>Turning data into <span>decisions.</span></h2>
+
+          <h2>
+            Turning data into
+            <span>decisions.</span>
+          </h2>
         </div>
 
         <div class="about-grid">
@@ -269,6 +288,7 @@
 
             <div class="mini-card">
               <i class="fa-solid fa-location-dot"></i>
+
               <div>
                 <span>Based in</span>
                 <strong>Amsterdam, Netherlands</strong>
@@ -277,6 +297,7 @@
 
             <div class="mini-card">
               <i class="fa-solid fa-graduation-cap"></i>
+
               <div>
                 <span>Education</span>
                 <strong>M.Sc. Data Science</strong>
@@ -285,6 +306,7 @@
 
             <div class="mini-card">
               <i class="fa-solid fa-code"></i>
+
               <div>
                 <span>Core stack</span>
                 <strong>Python • SQL • ML</strong>
@@ -293,6 +315,7 @@
 
             <div class="mini-card">
               <i class="fa-solid fa-briefcase"></i>
+
               <div>
                 <span>Interested in</span>
                 <strong>Data • ML • AI</strong>
@@ -314,8 +337,16 @@
       <div class="container">
 
         <div class="section-heading reveal">
-          <p class="section-label">02 — TOOLBOX</p>
-          <h2>Technologies I <span>work with.</span></h2>
+
+          <p class="section-label">
+            02 — TOOLBOX
+          </p>
+
+          <h2>
+            Technologies I
+            <span>work with.</span>
+          </h2>
+
         </div>
 
 
@@ -455,40 +486,66 @@
       <div class="container">
 
         <div class="section-heading reveal">
-          <p class="section-label">03 — PROJECTS</p>
-          <h2>Selected <span>work.</span></h2>
+
+          <p class="section-label">
+            03 — PROJECTS
+          </p>
+
+          <h2>
+            Selected
+            <span>work.</span>
+          </h2>
 
           <p class="section-description">
             Projects spanning analytics, machine learning,
             generative AI, healthcare and scalable data workflows.
           </p>
+
         </div>
 
 
-        <!-- Filters -->
+        <!-- PROJECT FILTERS -->
         <div class="project-filters reveal">
 
-          <button class="filter-btn active" data-filter="all">
+          <button
+            class="filter-btn active"
+            data-filter="all"
+          >
             All
           </button>
 
-          <button class="filter-btn" data-filter="analytics">
+          <button
+            class="filter-btn"
+            data-filter="analytics"
+          >
             Analytics
           </button>
 
-          <button class="filter-btn" data-filter="ml">
+          <button
+            class="filter-btn"
+            data-filter="ml"
+          >
             Machine Learning
           </button>
 
-          <button class="filter-btn" data-filter="ai">
+          <button
+            class="filter-btn"
+            data-filter="ai"
+          >
             AI / LLM
           </button>
 
-          <button class="filter-btn" data-filter="healthcare">
+          <button
+            class="filter-btn"
+            data-filter="healthcare"
+          >
             Healthcare
           </button>
 
-          <button class="filter-btn" data-filter="mlops">
+          <button
+            class="filter-btn"
+            data-filter="mlops"
+          >
             MLOps
           </button>
 
@@ -497,7 +554,7 @@
 
         <div class="projects-grid">
 
-          <!-- E-commerce -->
+          <!-- E-COMMERCE -->
           <article
             class="project-card featured-project reveal"
             data-category="analytics"
@@ -510,14 +567,16 @@
               </span>
 
               <div class="project-links">
+
                 <a
                   href="https://github.com/aliakhlaghiii/e-commerce-performance-analysis-SQL"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Open GitHub repository"
+                  aria-label="GitHub"
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
+
               </div>
 
             </div>
@@ -540,6 +599,7 @@
               automated quality checks.
             </p>
 
+
             <div class="project-results">
 
               <div>
@@ -559,12 +619,14 @@
 
             </div>
 
+
             <div class="project-tech">
               <span>PostgreSQL</span>
               <span>SQL</span>
               <span>Python</span>
               <span>GitHub Actions</span>
             </div>
+
 
             <a
               class="project-cta"
@@ -579,7 +641,7 @@
           </article>
 
 
-          <!-- Colon Polyp -->
+          <!-- COLON POLYP -->
           <article
             class="project-card featured-project reveal"
             data-category="ai healthcare"
@@ -592,6 +654,7 @@
               </span>
 
               <div class="project-links">
+
                 <a
                   href="https://github.com/aliakhlaghiii/colon_polyp_captioning-LLM"
                   target="_blank"
@@ -599,6 +662,7 @@
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
+
               </div>
 
             </div>
@@ -643,7 +707,7 @@
           </article>
 
 
-          <!-- Scalable ML -->
+          <!-- SCALABLE ML -->
           <article
             class="project-card featured-project reveal"
             data-category="ml mlops"
@@ -656,6 +720,7 @@
               </span>
 
               <div class="project-links">
+
                 <a
                   href="https://github.com/aliakhlaghiii/scalable_ML_pipeline"
                   target="_blank"
@@ -663,6 +728,7 @@
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
+
               </div>
 
             </div>
@@ -706,7 +772,7 @@
           </article>
 
 
-          <!-- Pump -->
+          <!-- PUMP SENSOR -->
           <article
             class="project-card featured-project reveal"
             data-category="ml"
@@ -719,6 +785,7 @@
               </span>
 
               <div class="project-links">
+
                 <a
                   href="https://github.com/aliakhlaghiii/pump_sensors_anomaly_detection"
                   target="_blank"
@@ -726,6 +793,7 @@
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
+
               </div>
 
             </div>
@@ -782,6 +850,7 @@
               </span>
 
               <div class="project-links">
+
                 <a
                   href="https://github.com/aliakhlaghiii/Enterprise-RAG-Assistant"
                   target="_blank"
@@ -789,6 +858,7 @@
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
+
               </div>
 
             </div>
@@ -830,7 +900,7 @@
           </article>
 
 
-          <!-- Time Series -->
+          <!-- TIME SERIES -->
           <article
             class="project-card reveal"
             data-category="analytics ml"
@@ -843,6 +913,7 @@
               </span>
 
               <div class="project-links">
+
                 <a
                   href="https://github.com/aliakhlaghiii/Time-series"
                   target="_blank"
@@ -850,6 +921,7 @@
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
+
               </div>
 
             </div>
@@ -892,7 +964,7 @@
           </article>
 
 
-          <!-- Diabetes -->
+          <!-- DIABETES -->
           <article
             class="project-card reveal"
             data-category="ml healthcare"
@@ -905,6 +977,7 @@
               </span>
 
               <div class="project-links">
+
                 <a
                   href="https://github.com/aliakhlaghiii/diabetes_stroke"
                   target="_blank"
@@ -912,6 +985,7 @@
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
+
               </div>
 
             </div>
@@ -954,7 +1028,7 @@
           </article>
 
 
-          <!-- Liver -->
+          <!-- LIVER -->
           <article
             class="project-card reveal"
             data-category="ml healthcare"
@@ -967,6 +1041,7 @@
               </span>
 
               <div class="project-links">
+
                 <a
                   href="https://github.com/aliakhlaghiii/Liver_disease"
                   target="_blank"
@@ -974,6 +1049,7 @@
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
+
               </div>
 
             </div>
@@ -1016,7 +1092,7 @@
           </article>
 
 
-          <!-- Gene Expression -->
+          <!-- GENE EXPRESSION -->
           <article
             class="project-card reveal"
             data-category="healthcare analytics"
@@ -1029,6 +1105,7 @@
               </span>
 
               <div class="project-links">
+
                 <a
                   href="https://github.com/aliakhlaghiii/Gene_expression"
                   target="_blank"
@@ -1036,6 +1113,7 @@
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
+
               </div>
 
             </div>
@@ -1076,7 +1154,7 @@
           </article>
 
 
-          <!-- Integromics -->
+          <!-- INTEGROMICS -->
           <article
             class="project-card reveal"
             data-category="healthcare analytics"
@@ -1089,6 +1167,7 @@
               </span>
 
               <div class="project-links">
+
                 <a
                   href="https://github.com/aliakhlaghiii/integromics"
                   target="_blank"
@@ -1096,6 +1175,7 @@
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
+
               </div>
 
             </div>
@@ -1162,13 +1242,24 @@
 
 
     <!-- EDUCATION -->
-    <section class="section alternate-section" id="education">
+    <section
+      class="section alternate-section"
+      id="education"
+    >
 
       <div class="container">
 
         <div class="section-heading reveal">
-          <p class="section-label">04 — BACKGROUND</p>
-          <h2>Education & <span>focus.</span></h2>
+
+          <p class="section-label">
+            04 — BACKGROUND
+          </p>
+
+          <h2>
+            Education &
+            <span>focus.</span>
+          </h2>
+
         </div>
 
 
@@ -1230,7 +1321,10 @@
 
 
     <!-- CONTACT -->
-    <section class="section contact-section" id="contact">
+    <section
+      class="section contact-section"
+      id="contact"
+    >
 
       <div class="container contact-container reveal">
 
@@ -1283,11 +1377,17 @@
     <div class="container footer-content">
 
       <div>
-        <strong>Ali Akhlaghi</strong>
+
+        <strong>
+          Ali Akhlaghi
+        </strong>
+
         <p>
           Data Scientist • ML Engineer • Data Analyst
         </p>
+
       </div>
+
 
       <div class="footer-links">
 
@@ -1295,6 +1395,7 @@
           href="https://github.com/aliakhlaghiii"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub"
         >
           <i class="fa-brands fa-github"></i>
         </a>
@@ -1303,11 +1404,15 @@
           href="https://www.linkedin.com/in/akhlaghiali"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn"
         >
           <i class="fa-brands fa-linkedin-in"></i>
         </a>
 
-        <a href="mailto:akhlaghiali97@gmail.com">
+        <a
+          href="mailto:akhlaghiali97@gmail.com"
+          aria-label="Email"
+        >
           <i class="fa-solid fa-envelope"></i>
         </a>
 
@@ -1315,11 +1420,15 @@
 
     </div>
 
+
     <div class="container footer-bottom">
+
       <p>
-        © <span id="currentYear"></span> Ali Akhlaghi.
+        © <span id="currentYear"></span>
+        Ali Akhlaghi.
         Built with HTML, CSS & JavaScript.
       </p>
+
     </div>
 
   </footer>
