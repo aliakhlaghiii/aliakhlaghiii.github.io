@@ -1204,6 +1204,15 @@ img {
   align-items: center;
 
   min-height: 32px;
+
+  margin-bottom: 24px;
+}
+
+
+.project-links {
+  display: flex;
+
+  gap: 14px;
 }
 
 

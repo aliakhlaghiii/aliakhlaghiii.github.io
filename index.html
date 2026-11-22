@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ali Akhlaghi | Data Scientist & ML Engineer</title>
+  <title>Ali Akhlaghi | Data Scientist, ML Engineer & AI Developer</title>
 
   <meta
     name="description"
-    content="Portfolio of Ali Akhlaghi — Data Scientist, Machine Learning Engineer and Data Analyst based in Amsterdam."
+    content="Portfolio of Ali Akhlaghi — Data Scientist, Machine Learning Engineer and AI Developer based in Amsterdam."
   >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -111,7 +111,7 @@
             <span>•</span>
             Machine Learning Engineer
             <span>•</span>
-            Data Analyst
+            AI Developer
           </h2>
 
           <p class="hero-description">
@@ -207,7 +207,7 @@
               <div class="terminal-json">
                 {<br>
                 &nbsp;&nbsp;<span>"role"</span>:
-                "Data Scientist / ML Engineer",<br>
+                "Data Scientist / ML Engineer / AI Developer",<br>
 
                 &nbsp;&nbsp;<span>"location"</span>:
                 "Amsterdam, NL",<br>
@@ -264,8 +264,8 @@
           <div class="about-text reveal">
 
             <p>
-              I'm a Data Scientist and Machine Learning Engineer based
-              in Amsterdam with an M.Sc. in Data Science for Life Sciences.
+              I'm a Data Scientist, Machine Learning Engineer and AI Developer
+              based in Amsterdam with an M.Sc. in Data Science for Life Sciences.
             </p>
 
             <p>
@@ -279,6 +279,13 @@
               the problem, preparing reliable data, developing models,
               evaluating results and turning technical work into useful
               business insights.
+            </p>
+
+            <p>
+              I also take models beyond the notebook: my latest project,
+              Pump Signal Monitor, is a deployed web app that helps users
+              find which time windows in 50 pump sensor streams are worth
+              investigating.
             </p>
 
           </div>
@@ -531,6 +538,94 @@
 
         <div class="projects-grid">
 
+          <!-- PUMP SENSOR -->
+          <article
+            class="project-card featured-project reveal"
+            data-category="ml"
+          >
+
+            <div class="project-top">
+
+              <span class="featured-label">Featured</span>
+
+              <div class="project-links">
+                <a
+                  href="https://pumpsensorsanomalydetection-4fylfzdnpnwklw5j3ccmto.streamlit.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Live demo"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a
+                  href="https://github.com/aliakhlaghiii/pump_sensors_anomaly_detection"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <p class="project-type">
+              MACHINE LEARNING • DEPLOYED APP
+            </p>
+
+            <h3>
+              Pump Sensors Anomaly Detection
+            </h3>
+
+            <p>
+              When a pump has 50 sensors, where do you start looking?
+              Unsupervised anomaly detection on industrial pump data, turned
+              into Pump Signal Monitor: a deployed web app where a PCA model
+              flags unusual 15-minute windows across all sensors, and
+              sensor-level checks show which readings crossed their limits,
+              when and by how much.
+            </p>
+
+            <div class="project-results">
+
+              <div>
+                <strong>50</strong>
+                <span>Sensor streams</span>
+              </div>
+
+              <div>
+                <strong>15 min</strong>
+                <span>Review windows</span>
+              </div>
+
+              <div>
+                <strong>Live</strong>
+                <span>Streamlit demo</span>
+              </div>
+
+            </div>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>scikit-learn</span>
+              <span>PCA</span>
+              <span>Isolation Forest</span>
+              <span>Streamlit</span>
+            </div>
+
+            <a
+              class="project-cta"
+              href="https://pumpsensorsanomalydetection-4fylfzdnpnwklw5j3ccmto.streamlit.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Try Live Demo
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+          </article>
+
+
           <!-- E-COMMERCE -->
           <article
             class="project-card featured-project reveal"
@@ -554,16 +649,12 @@
 
             </div>
 
-            <div class="project-icon">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-
             <p class="project-type">
               DATA ANALYTICS
             </p>
 
             <h3>
-              E-Commerce Performance Analysis
+              E-Commerce Performance Analysis SQL
             </h3>
 
             <p>
@@ -614,7 +705,7 @@
           </article>
 
 
-          <!-- COLON POLYP -->
+          <!-- VISION-LANGUAGE CAPTIONING -->
           <article
             class="project-card featured-project reveal"
             data-category="ai healthcare"
@@ -626,7 +717,7 @@
 
               <div class="project-links">
                 <a
-                  href="https://github.com/aliakhlaghiii/colon_polyp_captioning-LLM"
+                  href="https://github.com/aliakhlaghiii/vision-language-captioning"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -636,16 +727,12 @@
 
             </div>
 
-            <div class="project-icon">
-              <i class="fa-solid fa-microscope"></i>
-            </div>
-
             <p class="project-type">
               GENERATIVE AI • HEALTHCARE
             </p>
 
             <h3>
-              Colon Polyp Captioning
+              Vision-Language Captioning
             </h3>
 
             <p>
@@ -665,7 +752,7 @@
 
             <a
               class="project-cta"
-              href="https://github.com/aliakhlaghiii/colon_polyp_captioning-LLM"
+              href="https://github.com/aliakhlaghiii/vision-language-captioning"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -696,10 +783,6 @@
                 </a>
               </div>
 
-            </div>
-
-            <div class="project-icon">
-              <i class="fa-solid fa-diagram-project"></i>
             </div>
 
             <p class="project-type">
@@ -737,67 +820,6 @@
           </article>
 
 
-          <!-- PUMP SENSOR -->
-          <article
-            class="project-card featured-project reveal"
-            data-category="ml"
-          >
-
-            <div class="project-top">
-
-              <span class="featured-label">Featured</span>
-
-              <div class="project-links">
-                <a
-                  href="https://github.com/aliakhlaghiii/pump_sensors_anomaly_detection"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-
-            </div>
-
-            <div class="project-icon">
-              <i class="fa-solid fa-industry"></i>
-            </div>
-
-            <p class="project-type">
-              MACHINE LEARNING
-            </p>
-
-            <h3>
-              Pump Sensor Anomaly Detection
-            </h3>
-
-            <p>
-              Predictive-maintenance project using multivariate sensor data
-              and unsupervised machine-learning techniques to identify
-              abnormal equipment behaviour.
-            </p>
-
-            <div class="project-tech">
-              <span>Python</span>
-              <span>Isolation Forest</span>
-              <span>One-Class SVM</span>
-              <span>LOF</span>
-              <span>PCA</span>
-            </div>
-
-            <a
-              class="project-cta"
-              href="https://github.com/aliakhlaghiii/pump_sensors_anomaly_detection"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Project
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-
-          </article>
-
-
           <!-- RAG -->
           <article
             class="project-card reveal"
@@ -818,10 +840,6 @@
                 </a>
               </div>
 
-            </div>
-
-            <div class="project-icon">
-              <i class="fa-solid fa-robot"></i>
             </div>
 
             <p class="project-type">
@@ -879,16 +897,12 @@
 
             </div>
 
-            <div class="project-icon">
-              <i class="fa-solid fa-chart-line"></i>
-            </div>
-
             <p class="project-type">
               TIME SERIES
             </p>
 
             <h3>
-              Time-Series Analysis
+              Time Series
             </h3>
 
             <p>
@@ -917,7 +931,7 @@
           </article>
 
 
-          <!-- DIABETES -->
+          <!-- TABULAR RISK MODELING -->
           <article
             class="project-card reveal"
             data-category="ml healthcare"
@@ -929,7 +943,7 @@
 
               <div class="project-links">
                 <a
-                  href="https://github.com/aliakhlaghiii/diabetes_stroke"
+                  href="https://github.com/aliakhlaghiii/tabular-risk-modeling"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -939,16 +953,12 @@
 
             </div>
 
-            <div class="project-icon">
-              <i class="fa-solid fa-heart-pulse"></i>
-            </div>
-
             <p class="project-type">
               HEALTHCARE • MACHINE LEARNING
             </p>
 
             <h3>
-              Diabetes & Stroke Analysis
+              Tabular Risk Modeling
             </h3>
 
             <p>
@@ -966,7 +976,7 @@
 
             <a
               class="project-cta"
-              href="https://github.com/aliakhlaghiii/diabetes_stroke"
+              href="https://github.com/aliakhlaghiii/tabular-risk-modeling"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -977,7 +987,7 @@
           </article>
 
 
-          <!-- LIVER -->
+          <!-- TABULAR CLASSIFICATION -->
           <article
             class="project-card reveal"
             data-category="ml healthcare"
@@ -989,7 +999,7 @@
 
               <div class="project-links">
                 <a
-                  href="https://github.com/aliakhlaghiii/Liver_disease"
+                  href="https://github.com/aliakhlaghiii/tabular-classification"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -999,16 +1009,12 @@
 
             </div>
 
-            <div class="project-icon">
-              <i class="fa-solid fa-notes-medical"></i>
-            </div>
-
             <p class="project-type">
               HEALTHCARE ANALYTICS
             </p>
 
             <h3>
-              Liver Disease Analysis
+              Tabular Classification
             </h3>
 
             <p>
@@ -1026,7 +1032,7 @@
 
             <a
               class="project-cta"
-              href="https://github.com/aliakhlaghiii/Liver_disease"
+              href="https://github.com/aliakhlaghiii/tabular-classification"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -1037,7 +1043,7 @@
           </article>
 
 
-          <!-- GENE EXPRESSION -->
+          <!-- EXPRESSION PATTERN ANALYSIS -->
           <article
             class="project-card reveal"
             data-category="healthcare analytics"
@@ -1049,7 +1055,7 @@
 
               <div class="project-links">
                 <a
-                  href="https://github.com/aliakhlaghiii/Gene_expression"
+                  href="https://github.com/aliakhlaghiii/expression-pattern-analysis"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -1059,16 +1065,12 @@
 
             </div>
 
-            <div class="project-icon">
-              <i class="fa-solid fa-dna"></i>
-            </div>
-
             <p class="project-type">
               BIOINFORMATICS
             </p>
 
             <h3>
-              Gene Expression Analysis
+              Expression Pattern Analysis
             </h3>
 
             <p>
@@ -1084,7 +1086,7 @@
 
             <a
               class="project-cta"
-              href="https://github.com/aliakhlaghiii/Gene_expression"
+              href="https://github.com/aliakhlaghiii/expression-pattern-analysis"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -1095,7 +1097,7 @@
           </article>
 
 
-          <!-- INTEGROMICS -->
+          <!-- MULTI-SOURCE DATA INTEGRATION -->
           <article
             class="project-card reveal"
             data-category="healthcare analytics"
@@ -1107,7 +1109,7 @@
 
               <div class="project-links">
                 <a
-                  href="https://github.com/aliakhlaghiii/integromics"
+                  href="https://github.com/aliakhlaghiii/multi-source-data-integration"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -1117,16 +1119,12 @@
 
             </div>
 
-            <div class="project-icon">
-              <i class="fa-solid fa-dna"></i>
-            </div>
-
             <p class="project-type">
               LIFE SCIENCES
             </p>
 
             <h3>
-              Integromics
+              Multi-Source Data Integration
             </h3>
 
             <p>
@@ -1142,7 +1140,7 @@
 
             <a
               class="project-cta"
-              href="https://github.com/aliakhlaghiii/integromics"
+              href="https://github.com/aliakhlaghiii/multi-source-data-integration"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -1276,7 +1274,7 @@
 
         <p>
           I'm interested in opportunities across Data Science,
-          Machine Learning, AI and Data Analytics.
+          Machine Learning, AI Development and Data Analytics.
         </p>
 
         <div class="contact-buttons">
@@ -1320,7 +1318,7 @@
         </strong>
 
         <p>
-          Data Scientist • ML Engineer • Data Analyst
+          Data Scientist • ML Engineer • AI Developer
         </p>
 
       </div>
